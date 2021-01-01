@@ -1,0 +1,109 @@
+:root {
+	--rojo: #EA0935;
+	--fondo: #030227;
+	--gris: #7F7D80;
+	--blanco: #FEFBFF;
+}	
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--fondo);
+}
+
+.contenedor {
+	width: 90%;
+	margin: auto;
+}
+
+header {
+	padding: 30px 0;
+}
+
+header .contenedor {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .logo {
+	width: 210px;
+	height: 110px;
+}
+
+header i {
+	color: var(--blanco);
+	size: 20px;
+}
+
+header nav a {
+	color: var(--gris);
+	text-decoration: none;
+	margin-right: 35px;
+	font-family: 'Lato', sans-serif;
+
+}
+
+header nav a:hover,
+header nav a.activo {
+	color: var(--blanco);
+	transition: 1s;
+}
+
+/*-------------------------------------------------------PELICULA PRINCIPAL---------------------------------------------------*/
+
+.peli-principal {
+	font-size: 16px;
+	min-height: 40.62em;
+	color: var(--blanco);
+	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0, 0, 0, .50) 100%), url(../img/bdAttackOnTitan.jpg);
+	background-position: center center;
+	background-size: cover;
+	margin-bottom: 3.12em;
+	display: flex;
+	align-items: end;
+}
+
+.peli-principal .contenedor {
+	margin-bottom: 6.25em;
+}
+
+.peli-principal .titulo {
+	font-weight: 600;
+	font-size: 3.12em;
+	margin-bottom: 1.4em;
+	font-family: 'Poppins', sans-serif;
+}
+
+.peli-principal .descripcion {
+	font-weight: normal;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1em;
+	line-height: 1.75em;
+	max-width: 50%;
+	margin-bottom: 1.25em;
+}
+
+.peli-principal .boton {
+	background: rgba(0,0,0, 0.5);
+	border: none;
+	border-radius: 0.31em;
+	padding: 0.93em 1.87em;
+	color: var(--blanco);
+	margin-right: 1.25em;
+	transition: 2s ease all;
+	font-size: 1.12em;
+}
+
+.peli-principal .boton:hover {
+	background: var(--blanco);
+	color: #000;
+}
+
+.peli-principal .boton i {
+	margin-right: 1.25em;
+}
