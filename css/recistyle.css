@@ -1,0 +1,88 @@
+:root {
+	--rojo: #EA0935;
+	--fondo: #030227;
+	--gris: #7F7D80;
+	--blanco: #FEFBFF;
+}	
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+ /*----------------------------------------------------HEADER------------------------------------------------------------*/
+body {
+	background-color: var(--fondo);
+}
+
+.contenedor {
+	width: 90%;
+	height: 2em;
+	margin: auto;
+}
+
+header {
+	padding: 1.875em 0;
+}
+
+header .contenedor {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .logo {
+	width: 13.125em;
+	height: 6.875em;
+}
+
+header i {
+	color: var(--blanco);
+	size: 1.25em;
+}
+
+header nav a {
+	color: var(--gris);
+	text-decoration: none;
+	margin-right: 2.188em;
+	font-family: 'Lato', sans-serif;
+
+}
+
+header nav a:hover,
+header nav a.activo {
+	color: var(--blanco);
+	transition: 1s;
+}
+
+/*------------------------------------------------------CAPITULO Y SERVIDORES--------------------------------------------------*/
+
+body i {
+	size: 2.12em;
+	margin-left: 5.9em;
+	color: var(--blanco);
+	font-family: 'Poppins', sans-serif;
+}
+
+body span {
+	font-size: 1.50em;
+	color: var(--blanco);
+	font-family: 'Poppins', sans-serif;
+}
+
+body a {
+	text-decoration: none;
+}
+
+/*-------------------------------------------------------------VIDEO-----------------------------------------------------*/
+
+.video {
+	padding: 1em;
+	margin-left: 4.9em;
+}
+
+.sinopsis {
+	margin-left: 5.9em;
+	color: var(--blanco);
+	font-family: 'Raleway', sans-serif;
+}

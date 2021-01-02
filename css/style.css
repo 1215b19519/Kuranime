@@ -1,0 +1,200 @@
+:root {
+	--rojo: #ff2949;
+	--azul: #030326;
+	--gris: #7F7D80;
+	--blanco: #FEFBFF;
+}	
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+ /*----------------------------------------------------HEADER------------------------------------------------------------*/
+body {
+	background-color: var(--azul);
+}
+
+.contenedor {
+	width: 90%;
+	height: 2em;
+	margin: auto;
+}
+
+header {
+	padding: 1.875em 0;
+	background-color: var(--azul);
+}
+
+header {
+	background-image: url(../img/fondo.png);
+	z-index: 100
+}
+
+header .contenedor {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .logo {
+	width: 13.125em;
+	height: 5.375em;
+}
+
+header i {
+	color: var(--rojo);
+}
+
+header nav a {
+	color: var(--gris);
+	text-decoration: none;
+	margin-right: 2.188em;
+	font-family: 'Lato', sans-serif;
+
+}
+
+header nav a:hover,
+header nav a.activo {
+	color: var(--blanco);
+	transition: 1s;
+}
+
+/*-------------------------------------------------------PELICULA PRINCIPAL---------------------------------------------------*/
+
+.peli-principal {
+	font-size: 1em;
+	min-height: 50.62em;
+	color: var(--blanco);
+	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0, 0, 0, .50) 100%), url(../img/bdAttackOnTitan.jpg);
+	background-position: center center;
+	background-size: cover;
+	display: flex;
+	align-items: end;
+}
+
+.peli-principal .contenedor {
+	margin-bottom: 25.25em;
+}
+
+.peli-principal .titulo {
+	font-weight: 600;
+	font-size: 3.12em;
+	margin-bottom: .4em;
+	font-family: 'Poppins', sans-serif;
+}
+
+.peli-principal .descripcion {
+	font-weight: normal;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1em;
+	line-height: 1.75em;
+	max-width: 50%;
+	margin-bottom: 1.25em;
+}
+
+.peli-principal .boton {
+	background: rgba(0,0,0, 0.5);
+	border: none;
+	border-radius: 0.31em;
+	padding: 0.93em 1.87em;
+	color: var(--blanco);
+	margin-right: 1.25em;
+	transition: 2s ease all;
+	font-size: 1.12em;
+}
+
+.peli-principal .boton:hover {
+	background: var(--blanco);
+	color: #000;
+}
+
+.peli-principal .boton i {
+	margin-right: 1.25em;
+}
+
+/*--------------------------------------------------GENEROS--------------------------------------------------*/
+
+.recomendaciones {
+	background-image: url(../img/fondo.png);
+}
+
+.recomendaciones span {
+	position: absolute;
+	padding-top: 1.13em;
+	color: var(--blanco);
+	font-weight: 600;
+	font-size: 3.12em;
+	font-family: 'Poppins', sans-serif;
+	margin-left: 1.875em;
+}
+
+.recomendaciones p {
+	color: var(--blanco);
+	margin-top: 7.16em;
+	margin-left: 6.375em;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1em;
+}
+
+.recomendaciones i {
+	color: var(--blanco);
+	font-size: 2.12em;;
+	margin-left: 3.095em;
+}
+
+.recomendaciones .generos {
+	display: flex;
+	margin-top: -1.520em;
+	color: var(--blanco);
+	font-size: 2.12em;;
+	margin-left: 2.955em;	
+}
+
+.recomendaciones #abajo {
+	display: flex;
+	margin-top: -0.030em;
+	color: var(--blanco);
+	font-size: 2.12em;;
+	margin-left: 7.455em;
+}
+
+.recomendaciones h2 {
+	font-family: 'Raleway', sans-serif;	
+}
+
+.recomendaciones a {
+	color: var(--blanco);
+	text-decoration: none;
+	transition: 2s ease all;
+}
+
+.recomendaciones a:hover {
+	color: var(--rojo);
+}
+
+/*-------------------------------------------------PIE DE PAGINA---------------------------------------------*/
+
+body .lineadepie {
+	border-color: var(--rojo);
+}
+
+footer {
+	justify-content: center;
+	text-align: center;
+}
+
+footer img {
+	margin-right: 4.800em;
+}
+
+footer i {
+	color: var(--rojo);
+	margin-right: 2.188em;
+}
+
+footer p {
+	margin-right: 4.400em;
+	color: var(--blanco);
+	font-family: 'Raleway', sans-serif;
+}
