@@ -1,0 +1,113 @@
+:root {
+	--rojo: #ff2949;
+	--azul: #030326;
+	--gris: #7F7D80;
+	--blanco: #FEFBFF;
+}	
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+ /*----------------------------------------------------HEADER------------------------------------------------------------*/
+body {
+	background-color: var(--azul);
+}
+
+body {
+	background-image: url(../../../img/fondo.png);
+}
+
+.contenedor {
+	width: 90%;
+	height: 2em;
+	margin: auto;
+}
+
+header {
+	padding: 1.875em 0;
+	
+}
+
+
+header .contenedor {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .logo {
+	margin-top: 0.150em;
+	width: 13.125em;
+	height: 5.375em;
+}
+
+header span {
+	font-family: 'Poppins', sans-serif;
+
+}
+
+header i {
+	color: var(--rojo);
+}
+
+header nav a {
+	color: var(--blanco);
+	text-decoration: none;
+	margin-top: 0.150em;
+	margin-right: 2.188em;
+	font-family: 'Lato', sans-serif;
+	transition: 2s ease all;
+
+}
+
+header nav a:hover,
+header nav a.activo {
+	color: var(--rojo);
+	transition: 2s;
+}
+/*----------------------------------------------------BODY--------------------------------------------------------*/
+
+body h2, h3 {
+	color: var(--blanco);
+	font-family: 'Poppins', sans-serif;
+	font-size: 2.2em;
+	margin-left: 1.875em;
+}
+
+body .video {
+	margin-left: 4.375em;
+	width: 70em;
+	height: 40em;
+}
+
+
+
+
+
+/*-------------------------------------------------PIE DE PAGINA---------------------------------------------*/
+
+body .lineadepie {
+	border-color: var(--rojo);
+}
+
+footer {
+	background-color: var(--azul);
+}
+
+footer {
+	justify-content: center;
+	text-align: center;
+}
+
+
+footer i {
+	color: var(--rojo);
+	margin-right: 0.688em;
+}
+
+footer p {
+	color: var(--blanco);
+	font-family: 'Raleway', sans-serif;
+}

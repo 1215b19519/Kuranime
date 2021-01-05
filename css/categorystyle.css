@@ -1,0 +1,265 @@
+:root {
+	--rojo: #ff2949;
+	--azul: #030326;
+	--gris: #7F7D80;
+	--blanco: #FEFBFF;
+}	
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+ /*----------------------------------------------------HEADER------------------------------------------------------------*/
+body {
+	background-color: var(--azul);
+}
+
+.contenedor {
+	width: 90%;
+	height: 2em;
+	margin: auto;
+}
+
+header {
+	padding: 1.875em 0;
+	background-color: var(--azul);
+}
+
+header {
+	background-image: url(../img/fondo.png);
+	z-index: 100
+}
+
+header .contenedor {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .logo {
+	margin-top: 0.150em;
+	width: 13.125em;
+	height: 5.375em;
+}
+
+header span {
+	font-family: 'Poppins', sans-serif;
+
+}
+
+header i {
+	color: var(--rojo);
+}
+
+header nav a {
+	color: var(--blanco);
+	text-decoration: none;
+	margin-top: 0.150em;
+	margin-right: 2.188em;
+	font-family: 'Lato', sans-serif;
+	transition: 2s ease all;
+
+}
+
+header nav a:hover,
+header nav a.activo {
+	color: var(--rojo);
+	transition: 2s;
+}
+
+/*-----------------------------------------------------CONTENIDO(LETRA)------------------------------------------------*/
+
+body h1 {
+	color: var(--blanco);
+	font-family: 'Poppins', sans-serif;
+	padding-top: 1em;
+	padding-left: 1.875em;
+}
+
+body span {
+	color: var(--blanco);
+	font-family: 'Poppins', sans-serif;
+	padding-top: 1em;
+	padding-left: 2.350em;
+	font-size: 1.7em;
+}
+
+body i {
+	color: var(--blanco);
+}
+
+/*------------------------------------------------CARRUSEL(TITULO Y CONTROLES)---------------------------------------------*/
+
+.margen-titulo-controles {
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+}
+
+.margen-titulo-controles h2 {
+	font-family: 'Poppins', sans-serif;
+	color: var(--blanco);
+	font-size: 30px;
+}
+
+.margen-titulo-controles .indicadores button {
+	background: var(--blanco);
+	height: 3px;
+	width: 10px;
+	cursor: pointer;
+	border: none;
+	margin-right: 2px;
+}
+
+.margen-titulo-controles .indicadores button:hover,
+.margen-titulo-controles .indicadores button.activo {
+	background: var(--rojo);
+}
+
+/*-----------------------------------------------------CARRUSEL(IMAGENES)---------------------------------------------*/
+
+.margen {
+	width: 90%;
+	margin: auto;
+}
+
+.margen-principal i {
+	color: #fff;
+}
+
+.pelis-recomendadas {
+	margin-bottom: 70px;
+}
+
+.pelis-recomendadas .margen-principal {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.pelis-recomendadas .margen-principal .flecha-izquierda,
+.pelis-recomendadas .margen-principal .flecha-derecha{
+	position: absolute;
+	border: none;
+	background: rgba(0, 0, 0, 0.3);
+	font-size: 40px;
+	height: 50%
+	top: calc(50% - 25%);
+	line-height: 40px;
+	width: 50px;
+	color: var(--blanco);
+	cursor: pointer;
+	z-index: 500;
+	transition: .3s ease all;
+}
+
+.pelis-recomendadas .margen-principal .flecha-izquierda:hover,
+.pelis-recomendadas .margen-principal .flecha-derecha:hover {
+	background: rgba(0, 0, 0, 0.9);
+}
+
+.pelis-recomendadas .margen-principal .flecha-izquierda {
+	left: 0;
+}
+
+.pelis-recomendadas .margen-principal .flecha-derecha {
+	right: 0;
+}
+
+
+/*--------------------------------------------------------CARRUSEL----------------------------------------*/
+
+.pelis-recomendadas .margen-carrusel {
+	width: 100%;
+	padding: 20px 0;
+	overflow: hidden;
+	scroll-behavior: smooth;
+}
+
+.pelis-recomendadas .margen-carrusel .carrusel {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.pelis-recomendadas .margen-carrusel .carrusel .pelicula {
+	min-width: 20%;
+	transition: .4s ease all;
+	box-shadow: 5px 5px 10px rgba(0,0,0, .3);
+}
+
+.pelis-recomendadas .margen-carrusel .carrusel .pelicula.hover {
+	transform: scale(1.2);
+	transform-origin: center;
+}
+
+.pelis-recomendadas .margen-carrusel .carrusel .pelicula img {
+	width: 100%;
+	vertical-align: top;
+}
+
+
+/*-------------------------------------------MEDIA QUERTY------------------------------------------*/
+
+@media screen and (max-width: 800px) {
+	header .logo {
+		margin-bottom: 10px;
+		font-size: 30px;
+	}
+
+	header .margen {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.peli-principal {
+		font-size: 14px;
+	}
+
+	.peli-principal .descripcion {
+		max-width: 100%;
+	}
+
+	.peli-recomendadas .margen-carrusel {
+		overflow: visible;
+
+	}
+
+	.pelis-recomendadas .margen-carrusel .carrusel {
+		display: grid; 
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 20px;
+	}
+
+	.pelis-recomendadas .indicadores,
+	.pelis-recomendadas .flecha-izquierda,
+	.pelis-recomendadas .flecha-derecha {
+		display: none;
+	}
+}
+
+/*-------------------------------------------------PIE DE PAGINA---------------------------------------------*/
+
+body .lineadepie {
+	border-color: var(--rojo);
+}
+
+footer {
+	justify-content: center;
+	text-align: center;
+}
+
+footer img {
+	margin-right: 4.800em;
+}
+
+footer i {
+	color: var(--rojo);
+	margin-right: 2.188em;
+}
+
+footer p {
+	margin-right: 4.400em;
+	color: var(--blanco);
+	font-family: 'Raleway', sans-serif;
+}
