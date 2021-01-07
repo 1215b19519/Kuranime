@@ -1,0 +1,671 @@
+:root {
+	--rojo: #FF2949;
+	--azul: #030326;
+	--gris: #7F7D80;
+	--blanco: #FEFBFF;
+}	
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.alert{
+	color: var(--blanco);
+	font-family: 'Poppins', sans-serif;
+}
+
+ /*----------------------------------------------------HEADER------------------------------------------------------------*/
+
+body {
+	background-color: var(--azul);
+}
+
+body {
+	background-image: url(../img/fondo.png); position: absolute;
+}
+
+.contenedor {
+	width: 90%;
+	height: 2em;
+	margin: auto;
+}
+
+header {
+	padding: 1.875em 0;
+}
+
+
+header .contenedor {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .contenedor .logo {
+	margin-top: 0.150em;
+	width: 13.125em;
+	height: 5.375em;
+}
+
+header .contenedor span {
+	font-family: 'Poppins', sans-serif;
+
+}
+
+header .contenedor i {
+	color: var(--rojo);
+}
+
+header .contenedor nav a {
+	color: var(--blanco);
+	text-decoration: none;
+	margin-top: 0.150em;
+	margin-right: 2.188em;
+	font-family: 'Lato', sans-serif;
+	transition: 2s ease all;
+
+}
+
+header nav a:hover,
+header nav a.activo {
+	color: var(--rojo);
+	transition: 2s;
+}
+
+/*-------------------------------------------------------PELICULA PRINCIPAL---------------------------------------------------*/
+
+.peli-principal {
+	font-size: 1em;
+	min-height: 50.62em;
+	color: var(--blanco);
+	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0, 0, 0, .50) 100%), url(../img/bdAttackOnTitan.jpg);
+	background-position: center center;
+	background-size: cover;
+	display: flex;
+	align-items: end;
+}
+
+.peli-principal .contenedor {
+	margin-bottom: 25.25em;
+}
+
+.peli-principal .titulo {
+	font-weight: 600;
+	font-size: 3.12em;
+	margin-bottom: .4em;
+	font-family: 'Poppins', sans-serif;
+}
+
+.peli-principal .descripcion {
+	font-weight: normal;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1em;
+	line-height: 1.75em;
+	max-width: 50%;
+	margin-bottom: 1.25em;
+}
+
+.peli-principal .boton {
+	background: rgba(0,0,0, 0.5);
+	border: none;
+	border-radius: 0.31em;
+	padding: 0.93em 1.87em;
+	color: var(--blanco);
+	margin-right: 1.25em;
+	transition: 2s ease all;
+	font-size: 1.12em;
+}
+
+.peli-principal .boton:hover {
+	background: var(--blanco);
+	color: #000;
+}
+
+.peli-principal .boton i {
+	margin-right: 1.25em;
+}
+
+/*--------------------------------------------------GENEROS--------------------------------------------------*/
+
+.recomendaciones {
+	background-image: url(../img/fondo.png);
+	background-size: cover;
+}
+
+.recomendaciones span {
+	position: absolute;
+	padding-top: 1.13em;
+	color: var(--blanco);
+	font-weight: 600;
+	font-size: 3.12em;
+	font-family: 'Poppins', sans-serif;
+	margin-left: 1.875em;
+}
+
+.recomendaciones p {
+	color: var(--blanco);
+	margin-top: 7.16em;
+	margin-left: 6.375em;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1em;
+}
+
+.recomendaciones i {
+	color: var(--blanco);
+	font-size: 2.12em;;
+	margin-left: 3.295em;
+}
+
+.recomendaciones .generos {
+	display: flex;
+	margin-top: -1.520em;
+	color: var(--blanco);
+	font-size: 2.12em;;
+	margin-left: 2.955em;	
+}
+
+.recomendaciones #abajo {
+	display: flex;
+	margin-top: -0.030em;
+	color: var(--blanco);
+	font-size: 2.12em;;
+	margin-left: 7.455em;
+}
+
+.recomendaciones h2 {
+	font-family: 'Raleway', sans-serif;	
+}
+
+.recomendaciones a {
+	color: var(--blanco);
+	text-decoration: none;
+	transition: 2s ease all;
+}
+
+.recomendaciones a:hover {
+	color: var(--rojo);
+}
+/*------------------------------------------CARRUSEL(TITULO Y CONTROLES) TENDENCIA---------------------------------------------*/
+/*------------------------------------------CARRUSEL(TITULO Y CONTROLES) TENDENCIA---------------------------------------------*/
+
+.margen-titulo-controles {
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+}
+
+.margen-titulo-controles h2 {
+	font-family: 'Poppins', sans-serif;
+	color: var(--blanco);
+	font-size: 30px;
+}
+
+.margen-titulo-controles .indicadores button {
+	background: var(--blanco);
+	height: 3px;
+	width: 10px;
+	cursor: pointer;
+	border: none;
+	margin-right: 2px;
+}
+
+.margen-titulo-controles .indicadores button:hover,
+.margen-titulo-controles .indicadores button.activo {
+	background: var(--rojo);
+}
+
+/*-----------------------------------------------------CARRUSEL(IMAGENES)---------------------------------------------*/
+
+.margen {
+	width: 90%;
+	margin: auto;
+}
+
+.margen-principal i {
+	color: #fff;
+}
+
+.pelis-tendencia {
+	margin-bottom: 70px;
+}
+
+.pelis-tendencia .margen-principal {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.pelis-tendencia .margen-principal .flecha-izquierda,
+.pelis-tendencia .margen-principal .flecha-derecha{
+	position: absolute;
+	border: none;
+	background: rgba(0, 0, 0, 0.3);
+	font-size: 40px;
+	height: 50%
+	top: calc(50% - 25%);
+	line-height: 40px;
+	width: 50px;
+	color: var(--blanco);
+	cursor: pointer;
+	z-index: 500;
+	transition: .3s ease all;
+}
+
+.pelis-tendencia .margen-principal .flecha-izquierda:hover,
+.pelis-tendencia .margen-principal .flecha-derecha:hover {
+	background: rgba(0, 0, 0, 0.9);
+}
+
+.pelis-tendencia .margen-principal .flecha-izquierda {
+	left: 0;
+}
+
+.pelis-tendencia .margen-principal .flecha-derecha {
+	right: 0;
+}
+
+
+/*--------------------------------------------------------CARRUSEL----------------------------------------*/
+
+.pelis-tendencia .margen-carrusel {
+	width: 100%;
+	padding: 20px 0;
+	overflow: hidden;
+	scroll-behavior: smooth;
+}
+
+.pelis-tendencia .margen-carrusel .carrusel {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.pelis-tendencia .margen-carrusel .carrusel .pelicula {
+	min-width: 20%;
+	transition: .4s ease all;
+	box-shadow: 5px 5px 10px rgba(0,0,0, .3);
+}
+
+.pelis-tendencia .margen-carrusel .carrusel .pelicula.hover {
+	transform: scale(1.2);
+	transform-origin: center;
+}
+
+.pelis-tendencia .margen-carrusel .carrusel .pelicula img {
+	width: 100%;
+	vertical-align: top;
+}
+
+
+/*-------------------------------------------MEDIA QUERTY------------------------------------------*/
+
+@media screen and (max-width: 800px) {
+	header .logo {
+		margin-bottom: 10px;
+		font-size: 30px;
+	}
+
+	header .margen {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.peli-principal {
+		font-size: 14px;
+	}
+
+	.peli-principal .descripcion {
+		max-width: 100%;
+	}
+
+	.peli-tendencia .margen-carrusel {
+		overflow: visible;
+
+	}
+
+	.pelis-tendencia .margen-carrusel .carrusel {
+		display: grid; 
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 20px;
+	}
+
+	.pelis-tendencia .indicadores,
+	.pelis-tendencia .flecha-izquierda,
+	.pelis-tendencia .flecha-derecha {
+		display: none;
+	}
+}
+/*------------------------------------------CARRUSEL(TITULO Y CONTROLES) TENDENCIA---------------------------------------------*/
+/*------------------------------------------CARRUSEL(TITULO Y CONTROLES) TENDENCIA---------------------------------------------*/
+
+/*------------------------------------------CARRUSEL(TITULO Y CONTROLES) NUEVOS---------------------------------------------*/
+/*------------------------------------------CARRUSEL(TITULO Y CONTROLES) NUEVOS---------------------------------------------*/
+
+.margen-titulo-controles {
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+}
+
+.margen-titulo-controles h2 {
+	font-family: 'Poppins', sans-serif;
+	color: var(--blanco);
+	font-size: 30px;
+}
+
+.margen-titulo-controles .indicadores button {
+	background: var(--blanco);
+	height: 3px;
+	width: 10px;
+	cursor: pointer;
+	border: none;
+	margin-right: 2px;
+}
+
+.margen-titulo-controles .indicadores button:hover,
+.margen-titulo-controles .indicadores button.activo {
+	background: var(--rojo);
+}
+
+/*-----------------------------------------------------CARRUSEL(IMAGENES)---------------------------------------------*/
+
+.margen {
+	width: 90%;
+	margin: auto;
+}
+
+.margen-principal i {
+	color: #fff;
+}
+
+.pelis-nuevos {
+	margin-bottom: 70px;
+}
+
+.pelis-nuevos .margen-principal {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.pelis-nuevos .margen-principal .flecha-izquierda-nuevos,
+.pelis-nuevos .margen-principal .flecha-derecha-nuevos{
+	position: absolute;
+	border: none;
+	background: rgba(0, 0, 0, 0.3);
+	font-size: 40px;
+	height: 50%
+	top: calc(50% - 25%);
+	line-height: 40px;
+	width: 50px;
+	color: var(--blanco);
+	cursor: pointer;
+	z-index: 500;
+	transition: .3s ease all;
+}
+
+.pelis-nuevos .margen-principal .flecha-izquierda-nuevos:hover,
+.pelis-nuevos .margen-principal .flecha-derecha-nuevos:hover {
+	background: rgba(0, 0, 0, 0.9);
+}
+
+.pelis-nuevos .margen-principal .flecha-izquierda-nuevos {
+	left: 0;
+}
+
+.pelis-nuevos .margen-principal .flecha-derecha-nuevos {
+	right: 0;
+}
+
+
+/*--------------------------------------------------------CARRUSEL----------------------------------------*/
+
+.pelis-nuevos .margen-carrusel-nuevos {
+	width: 100%;
+	padding: 20px 0;
+	overflow: hidden;
+	scroll-behavior: smooth;
+}
+
+.pelis-nuevos .margen-carrusel-nuevos .carrusel {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.pelis-nuevos .margen-carrusel-nuevos .carrusel .pelicula {
+	min-width: 20%;
+	transition: .4s ease all;
+	box-shadow: 5px 5px 10px rgba(0,0,0, .3);
+}
+
+.pelis-nuevos .margen-carrusel-nuevos .carrusel .pelicula.hover {
+	transform: scale(1.2);
+	transform-origin: center;
+}
+
+.pelis-nuevos .margen-carrusel-nuevos .carrusel .pelicula img {
+	width: 100%;
+	vertical-align: top;
+}
+
+
+/*-------------------------------------------MEDIA QUERTY------------------------------------------*/
+
+@media screen and (max-width: 800px) {
+	header .logo {
+		margin-bottom: 10px;
+		font-size: 30px;
+	}
+
+	header .margen {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.peli-principal {
+		font-size: 14px;
+	}
+
+	.peli-principal .descripcion {
+		max-width: 100%;
+	}
+
+	.peli-nuevos .margen-carrusel {
+		overflow: visible;
+
+	}
+
+	.pelis-nuevos .margen-carrusel .carrusel {
+		display: grid; 
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 20px;
+	}
+
+	.pelis-nuevos .indicadores,
+	.pelis-nuevos .flecha-izquierda-nuevos,
+	.pelis-nuevos .flecha-derecha-nuevos {
+		display: none;
+	}
+}
+
+/*------------------------------------------CARRUSEL(TITULO Y CONTROLES) NUEVOS---------------------------------------------*/
+/*------------------------------------------CARRUSEL(TITULO Y CONTROLES) NUEVOS---------------------------------------------*
+
+/*------------------------------------------CARRUSEL(TITULO Y CONTROLES) CLASICOS---------------------------------------------*/
+/*------------------------------------------CARRUSEL(TITULO Y CONTROLES) CLASICOS---------------------------------------------*/
+
+.margen-titulo-controles {
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+}
+
+.margen-titulo-controles h2 {
+	font-family: 'Poppins', sans-serif;
+	color: var(--blanco);
+	font-size: 30px;
+}
+
+.margen-titulo-controles .indicadores button {
+	background: var(--blanco);
+	height: 3px;
+	width: 10px;
+	cursor: pointer;
+	border: none;
+	margin-right: 2px;
+}
+
+.margen-titulo-controles .indicadores button:hover,
+.margen-titulo-controles .indicadores button.activo {
+	background: var(--rojo);
+}
+
+/*-----------------------------------------------------CARRUSEL(IMAGENES)---------------------------------------------*/
+
+.margen {
+	width: 90%;
+	margin: auto;
+}
+
+.margen-principal i {
+	color: #fff;
+}
+
+.pelis-clasicos {
+	margin-bottom: 70px;
+}
+
+.pelis-clasicos .margen-principal {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.pelis-clasicos .margen-principal .flecha-izquierda-nuevos,
+.pelis-clasicos .margen-principal .flecha-derecha-nuevos{
+	position: absolute;
+	border: none;
+	background: rgba(0, 0, 0, 0.3);
+	font-size: 40px;
+	height: 50%
+	top: calc(50% - 25%);
+	line-height: 40px;
+	width: 50px;
+	color: var(--blanco);
+	cursor: pointer;
+	z-index: 500;
+	transition: .3s ease all;
+}
+
+.pelis-clasicos .margen-principal .flecha-izquierda-nuevos:hover,
+.pelis-clasicos .margen-principal .flecha-derecha-nuevos:hover {
+	background: rgba(0, 0, 0, 0.9);
+}
+
+.pelis-clasicos .margen-principal .flecha-izquierda-nuevos {
+	left: 0;
+}
+
+.pelis-clasicos .margen-principal .flecha-derecha-nuevos {
+	right: 0;
+}
+
+
+/*--------------------------------------------------------CARRUSEL----------------------------------------*/
+
+.pelis-clasicos .margen-carrusel-clasicos {
+	width: 100%;
+	padding: 20px 0;
+	overflow: hidden;
+	scroll-behavior: smooth;
+}
+
+.pelis-clasicos .margen-carrusel-clasicos .carrusel {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.pelis-clasicos .margen-carrusel-clasicos .carrusel .pelicula {
+	min-width: 20%;
+	transition: .4s ease all;
+	box-shadow: 5px 5px 10px rgba(0,0,0, .3);
+}
+
+.pelis-clasicos .margen-carrusel-clasicos .carrusel .pelicula.hover {
+	transform: scale(1.2);
+	transform-origin: center;
+}
+
+.pelis-clasicos .margen-carrusel-clasicos .carrusel .pelicula img {
+	width: 100%;
+	vertical-align: top;
+}
+
+
+/*-------------------------------------------MEDIA QUERTY------------------------------------------*/
+
+@media screen and (max-width: 800px) {
+	header .logo {
+		margin-bottom: 10px;
+		font-size: 30px;
+	}
+
+	header .margen {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.peli-principal {
+		font-size: 14px;
+	}
+
+	.peli-principal .descripcion {
+		max-width: 100%;
+	}
+
+	.peli-clasicos .margen-carrusel {
+		overflow: visible;
+
+	}
+
+	.pelis-clasicos .margen-carrusel .carrusel {
+		display: grid; 
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 20px;
+	}
+
+	.pelis-clasicos .indicadores,
+	.pelis-clasicos .flecha-izquierda-nuevos,
+	.pelis-clasicos .flecha-derecha-nuevos {
+		display: none;
+	}
+}
+
+
+
+/*-------------------------------------------------PIE DE PAGINA---------------------------------------------*/
+
+body .lineadepie {
+	border-color: var(--rojo);
+}
+
+footer {
+	background-color: var(--azul);
+}
+
+footer {
+	justify-content: center;
+	text-align: center;
+}
+
+
+footer i {
+	color: var(--rojo);
+	margin-right: 0.688em;
+}
+
+footer p {
+	color: var(--blanco);
+	font-family: 'Raleway', sans-serif;
+}
