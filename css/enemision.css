@@ -59,14 +59,14 @@ header nav a {
 	margin-top: 0.150em;
 	margin-right: 2.188em;
 	font-family: 'Lato', sans-serif;
-	transition: 2s ease all;
+	transition: 1s ease all;
 
 }
 
 header nav a:hover,
 header nav a.activo {
 	color: var(--rojo);
-	transition: 2s;
+	transition: 1s;
 }
 
 .emision-texto {
@@ -95,25 +95,25 @@ header nav a.activo {
 }
 
 .contenedor-lista .lista-imagen li {
-	margin-right: 15px;
-	margin-bottom: 15px;
+	margin-right: 0.938em;
+	margin-bottom: 0.938em;
 	list-style: none;
 }
 
 .contenedor-lista .lista-imagen li .contenedor-imagen {
 	position: relative;
-	width: 250px;
-	height: 180px;
+	width: 15.625em;
+	height: 11.25em;
 	background: var(--rojo);
-	border-radius: 10px;
+	border-radius: 0.625em;
 }
 
 .contenedor-lista .lista-imagen li .contenedor-imagen img {
 	position: relative;
-	width: 250px;
-	height: 150px;
-	border-top-right-radius: 5px;
-	border-top-left-radius: 5px;
+	width: 15.625em;
+	height: 9.375em;
+	border-top-right-radius: 0.313em;
+	border-top-left-radius: 0.313em;
 }
 
 
@@ -121,7 +121,7 @@ header nav a.activo {
 	color: var(--blanco);
 	text-decoration: none;
 	font-family: 'Lato', sans-serif;
-	margin-left: 5px;
+	margin-left: 0.313em;
 }
 
 

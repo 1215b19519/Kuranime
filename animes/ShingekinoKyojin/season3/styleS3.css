@@ -1,0 +1,329 @@
+:root {
+	--rojo: #ff2949;
+	--azul: #030326;
+	--gris: #7F7D80;
+	--blanco: #FEFBFF;
+}	
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+ /*----------------------------------------------------HEADER------------------------------------------------------------*/
+body {
+	background-color: var(--azul);
+}
+
+body {
+	background-image: url(../../img/fondo.png);
+	background-size: cover;
+}
+
+.contenedor {
+	width: 90%;
+	height: 2em;
+	margin: auto;
+}
+
+header {
+	padding: 1.875em 0;
+	
+}
+
+
+header .contenedor {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .logo {
+	margin-top: 0.150em;
+	width: 13.125em;
+	height: 5.375em;
+}
+
+header span {
+	font-family: 'Poppins', sans-serif;
+
+}
+
+header i {
+	color: var(--rojo);
+}
+
+header nav a {
+	color: var(--blanco);
+	text-decoration: none;
+	margin-top: 0.150em;
+	margin-right: 2.188em;
+	font-family: 'Lato', sans-serif;
+	transition: 1s ease all;
+
+}
+
+header nav a:hover,
+header nav a.activo {
+	color: var(--rojo);
+	transition: 1s;
+}
+
+/*-------------------------BUSCADOR---------------------*/
+
+#input-search {
+	position: relative;
+	text-decoration: none;
+	margin-top: 1em;
+	width: 15em;
+	height: 3em;
+	text-indent: 0.5em;
+	background: var(--azul);
+	font-family: 'Poppins', sans-serif;
+	color: var(--blanco);
+
+}
+
+#content-search {
+	width: 100%;
+	height: 10em;
+	margin-left: 10em;
+	background: var(--azul);
+}
+
+
+.content-table {
+	position: fixed;
+	width: 75%;
+	max-height: 200px;
+	height: auto;
+	margin-left: 15.5em;
+	margin-top: 1em;
+	overflow-y: visible;
+	overflow-x: hidden;
+	background: var(--azul);
+	display: none;
+}
+
+.content-table table{
+	width: 100%
+	background: var(--azul);
+}
+
+tbody tr td a {
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+	background: var(--azul);
+}
+
+tbody tr td a:hover {
+	background: #000;
+}
+
+#table_length, #table_filter, #table_info, #table_paginate {
+  	display: none;
+}
+
+
+
+
+.contenedor-anime {
+	font-size: 1em;
+	min-height: 50.62em;
+	color: var(--blanco);
+	background: linear-gradient(rgba(0, 0, 0, .0) 50%, rgba(0, 0, 0, .0) 100%), url(../../../img/DegradadoSNKS3.jpg);
+	background-position: center center;
+	background-size: cover;
+	display: flex;
+}
+
+
+.contenedor-anime .portada-anime {
+	margin-left: 5.775em;
+	margin-top: 8em;
+	width: 23em;
+	height: 33em;
+	background-image: url(../../../img/SNKS3.jpg);
+	background-position: center center;
+	background-size: cover;
+	border: 0.050em solid var(--rojo);
+}
+
+.portada-anime .en-emision {
+	border: 0.050em solid var(--rojo);
+	margin-top: 33.5em;
+	width: 11.5em;
+	height: 2.3em;
+}
+
+.portada-anime .en-emision span {
+	font-family: 'Poppins', sans-serif;
+	color: var(--rojo);
+	font-size: 1.5em;
+	margin-left: 0.9em;
+}
+
+.portada-anime .tv {
+	border: 0.050em solid var(--rojo);
+	width: 11.5em;
+	height: 2.3em;
+	margin-left: 11.5em;
+	margin-top: -2.3em;
+}
+
+.portada-anime .tv span {
+	font-family: 'Poppins', sans-serif;
+	color: var(--rojo);
+	font-size: 1.5em;
+	margin-left: 2.4em;
+
+}
+
+.portada-anime .estreno {
+	border: 0.050em solid var(--rojo);
+	width: 23em;
+	height: 2em;
+	margin-top: 0.3em;
+	text-align: center;
+}
+
+.portada-anime .estreno span {
+	font-family: 'Poppins', sans-serif;
+	color: var(--rojo);
+
+
+}
+
+
+
+.info-anime {
+	margin-top: 10em;
+}
+
+#titulo-anime {
+	font-family: 'Poppins', sans-serif;
+	font-size: 2.8em;
+	margin-top: 3.6em;
+	margin-left: 0.6em;
+}
+
+.info-anime .categorias-anime {
+	margin-left: 2.6em;
+	margin-top: 1em;
+}
+
+.info-anime .categorias-anime li {
+	font-family: 'Poppins', sans-serif;
+	text-decoration: none;
+	display: inline;
+	padding-top: 0.4em;
+	padding-bottom: 0.4em;
+	padding-left: 1em;
+	padding-right: 1em;
+	border: 0.050em solid var(--rojo);
+	border-radius: 1.3em;
+}
+
+.info-anime .lista-ovas {
+	margin-left: 2.6em;
+	margin-top: 1em;
+}
+
+
+.info-anime .lista-ovas a {
+	text-decoration: none;
+	color: var(--gris);
+	font-family: 'Poppins', sans-serif;
+	transition: 1s
+}
+
+.info-anime .lista-ovas a:hover {
+	color: var(--blanco);
+}
+
+.info-anime .lista-ovas .precuela-texto {
+	color: var(--rojo);
+}
+
+
+.info-anime i {
+	margin-left: 1.4em;
+	color: var(--blanco);
+	}
+
+#texto-episodios {
+	color: var(--blanco);
+	font-family: 'Poppins', sans-serif;
+	font-size: 2em;
+
+}
+
+.lista-episodios {
+	width: 20em;
+	height: 20em;
+	overflow-y: scroll;
+	overflow-x: none;
+}
+
+.lista-episodios::-webkit-scrollbar {
+	width: 0.4em;
+}
+
+.lista-episodios::-webkit-scrollbar-thumb {
+	background: var(--rojo);
+	border-radius: 5em;
+}
+
+
+
+.lista-episodios .division-capitulos {
+	border-color: var(--rojo);
+	width: 20em;
+	margin-left: -3em;
+}
+
+.info-anime .lista-episodios {
+	margin-left: 7.6em;
+}
+
+.info-anime .lista-episodios i {
+	margin-left: 0em;
+	color: var(--rojo);
+}
+
+.info-anime .lista-episodios a {
+	color: var(--blanco);
+	text-decoration: none;
+	font-family: 'Poppins', sans-serif;
+}
+
+.info-anime .lista-episodios i {
+	padding-top: 0.5em;
+}
+
+/*-------------------------------------------------PIE DE PAGINA---------------------------------------------*/
+
+body .lineadepie {
+	border-color: var(--rojo);
+}
+
+footer {
+	background-color: var(--azul);
+}
+
+footer {
+	justify-content: center;
+	text-align: center;
+}
+
+
+footer i {
+	color: var(--rojo);
+	margin-right: 0.688em;
+}
+
+footer p {
+	color: var(--blanco);
+	font-family: 'Raleway', sans-serif;
+}
